@@ -26,5 +26,6 @@ class File: FileSystemEntity {
         self.content = content
         self.size = content.count
         self.updateTime()
+        notify(.modified)
     }
 }

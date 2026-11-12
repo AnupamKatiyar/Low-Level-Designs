@@ -17,7 +17,7 @@ class Consumer {
     }
     
     func doWork() {
-        if let message = service.consumeMessage() {
+        while let message = service.consumeMessage() {
             worker.performJob(message.value)
             service.ack(message)
         }

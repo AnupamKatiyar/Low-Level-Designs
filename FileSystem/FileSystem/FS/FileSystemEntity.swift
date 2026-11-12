@@ -41,7 +41,6 @@ class FileSystemEntity: FileSystemProtocol { //Abstract
     
     func updateTime() {
         self.modifiedAt = Date()
-        notify(.modified)
     }
 }
 

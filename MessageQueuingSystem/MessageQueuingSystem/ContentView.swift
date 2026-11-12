@@ -52,6 +52,13 @@ struct ContentView: View {
             num += 1
             modelContext.insert(newItem)
         }
+
+//        let client = Client(Broker.instance)
+//        for _ in 0..<10 {
+//            client.send(message: "Hello World!")
+//        }
+//        let consumer = Consumer(service: Broker.instance)
+//        consumer.doWork()
     }
 
     private func deleteItems(offsets: IndexSet) {
